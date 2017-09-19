@@ -1,6 +1,5 @@
 def group_input(word):
-    chars = list(word)
-    return {char: chars.count(char) for char in set(chars)}
+    return {char: word.count(char) for char in set(word)}
 
 
 def is_empty(grouped_chars):
